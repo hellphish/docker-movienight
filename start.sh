@@ -1,5 +1,5 @@
 #!/bin/bash
 usermod -u ${PUID} ${CONT_USER} > /dev/null 2>&1
 groupmod -g ${PGID} ${CONT_USER} > /dev/null 2>&1
-sed -i -e "s/\"AdminPassword\": \"DBA5E73E4EA26E377273\",/\"AdminPassword\": \"$ADMIN_PASSWORD\",/g" -e "s/\"StreamKey\": \"ALongStreamKey\",/\"StreamKey\": \"$STREAM_KEY\",/g" -e "s/\"RoomAccess\": \"open\",/\"RoomAccess\": \"$ACCESS_MODE\",/g" -e "s/\"RoomAccessPin\": \"\",/\"RoomAccessPin\": \"$ACCESS_PIN\",/g" settings.json
+sed -i -E -e "s/\"AdminPassword\": \"(.+)\",/\"AdminPassword\": \"$ADMIN_PASSWORD\",/g" -e "s/\"StreamKey\": \"(.+)\",/\"StreamKey\": \"$STREAM_KEY\",/g" -e "s/\"RoomAccess\": \"(.+)\",/\"RoomAccess\": \"$ACCESS_MODE\",/g" -e "s/\"RoomAccessPin\": \"\",/\"RoomAccessPin\": \"$ACCESS_PIN\",/g" settings.json
 su -s /bin/bash -c "${CONT_CMD}" ${CONT_USER}
