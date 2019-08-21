@@ -14,11 +14,15 @@ docker run \
   spencerhughes/movienight:latest
 ```
 ## Environment Variables
+| Variable Name | Description |
+| --- | --- |
 | STREAM\_KEY | Sets the stream key for OBS |
-| ADMIN\_PASSWORD | Sets the admin password for the MovieNight web interface
+| ADMIN\_PASSWORD | Sets the admin password for the MovieNight web interface |
 | PUID | Sets the UID to execute MovieNight as |
 | PGID | Sets the GID to execute MovieNight as |
 
 ## Ports
+| Port | Description |
+| --- | --- |
 | 8089 | HTTP port for MovieNight frontent |
 | 1935 | RTMP port for OBS stream |
