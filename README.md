@@ -18,6 +18,8 @@ docker run \
 | --- | --- |
 | STREAM\_KEY | Sets the stream key for OBS |
 | ADMIN\_PASSWORD | Sets the admin password for the MovieNight web interface |
+| ACCESS\_MODE | Sets the room access level ("open","pin","request") |
+| ACCESS\_PIN | Sets the room PIN for access level = pin |
 | PUID | Sets the UID to execute MovieNight as |
 | PGID | Sets the GID to execute MovieNight as |
 

@@ -34,6 +34,8 @@ ENV GOPATH=/opt
 ENV PATH="$GOPATH/bin:$GOROOT/bin:${PATH}"
 ENV STREAM_KEY="A1B2C3D4E5F6G7"
 ENV ADMIN_PASSWORD="A1B2C3D4E5F6G7"
+ENV ACCESS_MODE="open"
+ENV ACCESS_PIN=""
 
 RUN apt-get -qq update && \
 	apt-get -qq upgrade && \
