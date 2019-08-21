@@ -24,5 +24,5 @@ docker run \
 ## Ports
 | Port | Description |
 | --- | --- |
-| 8089 | HTTP port for MovieNight frontent |
+| 8089 | HTTP port for MovieNight frontend |
 | 1935 | RTMP port for OBS stream |
