@@ -1,5 +1,5 @@
 # docker-movienight
-Docker wrapper around (MovieNight)[https://github.com/zorchenhimer/MovieNight]
+Docker wrapper around [MovieNight](https://github.com/zorchenhimer/MovieNight)
 ## Usage
 ```
 docker run \
