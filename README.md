@@ -1,5 +1,6 @@
 # docker-movienight
 Docker wrapper around [MovieNight](https://github.com/zorchenhimer/MovieNight)
+Forked from spencerhughes/docker-movienight to fix Golang version
 ## Usage
 ```
 docker run \
